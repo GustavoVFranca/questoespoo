@@ -1,0 +1,20 @@
+package teste;
+
+public class PessoaMain {
+
+	public static void main(String[] args) {
+		Pessoa p = new Pessoa("Rodrigo", "rua a");
+		System.out.println(p);
+		
+		PessoaFisica pf = new PessoaFisica("Rodrigo", "rua aaa");	
+		pf.setCpf("111.222.333-44");
+		pf.setEstadoCivil("solteiro");
+		System.out.println(pf);
+
+		PessoaJuridica pj = new PessoaJuridica("Rodrigo", "rua aaa");
+		pj.setTipoEmpresa("ab");
+		pj.setCnpj("11.222.333/0001-44");
+		System.out.println(pj);							
+	}
+
+}
